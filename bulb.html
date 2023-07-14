@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bulb</title>
+</head>
+<body>
+    <style>
+        body{
+           background-color: aqua;
+            text-align: center;
+            height: 700px;
+        }
+        button{
+            padding: 1%;background-color: darkred;
+        }
+    </style>
+    <script>
+        function light(value)
+        {
+         var  pic;
+        if(value==1)
+       pic="../PROJECT 2/bulb off.jpg";
+       else
+       pic="../PROJECT 2/bulb on.png";
+       document.getElementById('bulb').src=pic;
+        }
+        
+    </script>
+    
+        <h1>BULB SWITCHING</h1><br><br>
+        <img id="bulb" src="../PROJECT 2/bulb off.jpg">
+        <button onclick="light(0)">TURN ON</button>
+        
+        <button onclick="light(1)">TURN OFF</button><br>
+      <img src="" alt="">
+    
+</body>
+</html>
